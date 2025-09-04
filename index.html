@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Termos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Tienda de Termos</h1>
+      <div class="nav-links">
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <button id="verCarrito" class="btn">🛒 Ver Carrito</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid-container">
+      <div class="card">
+        <img src="fotosss/rued1.jpg" alt="Termo 1" />
+        <h3>Termo Acero 1L</h3>
+        <p>$5.000</p>
+        <button class="btn agregar-carrito" data-nombre="Termo Acero 1L" data-precio="5000">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <img src="fotosss/rued2.jpg" alt="Termo 2" />
+        <h3>Termo Clásico 750ml</h3>
+        <p>$4.200</p>
+        <button class="btn agregar-carrito" data-nombre="Termo Clásico 750ml" data-precio="4200">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <img src="fotosss/rued3.jpg" alt="Termo 3" />
+        <h3>Termo Moderno 500ml</h3>
+        <p>$3.800</p>
+        <button class="btn agregar-carrito" data-nombre="Termo Moderno 500ml" data-precio="3800">Agregar al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <aside id="carrito" class="carrito oculto">
+    <h2>🛒 Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0</p>
+    <button class="btn" id="vaciar">Vaciar Carrito</button>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Tienda de Termos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
